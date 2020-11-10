@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated with glade 3.22.1 -->
+<interface>
+  <requires lib="gtk+" version="3.20"/>
+  <object class="GtkListStore" id="storeItems">
+    <columns>
+      <!-- column-name Name -->
+      <column type="gchar"/>
+      <!-- column-name Value -->
+      <column type="gint"/>
+      <!-- column-name Image -->
+      <column type="GdkPixbuf"/>
+    </columns>
+  </object>
+  <object class="GtkWindow" id="wnd">
+    <property name="can_focus">False</property>
+    <child>
+      <placeholder/>
+    </child>
+    <child>
+      <object class="GtkScrolledWindow">
+        <property name="visible">True</property>
+        <property name="can_focus">True</property>
+        <property name="shadow_type">in</property>
+        <child>
+          <object class="GtkTreeView" id="lstItems">
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="model">storeItems</property>
+            <child internal-child="selection">
+              <object class="GtkTreeSelection"/>
+            </child>
+          </object>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>
