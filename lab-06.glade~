@@ -8,7 +8,7 @@
       <column type="gchar"/>
       <!-- column-name value -->
       <column type="gint"/>
-      <!-- column-name image -->
+      <!-- column-name GdkPixbuf1 -->
       <column type="GdkPixbuf"/>
     </columns>
   </object>

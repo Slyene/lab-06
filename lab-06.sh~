@@ -1,0 +1,2 @@
+rm -f lab-06.db
+cat lab-04.sql | sqlite3 lab-06.db
